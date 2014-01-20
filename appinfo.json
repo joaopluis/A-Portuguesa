@@ -1,0 +1,35 @@
+{
+    "versionLabel": "1.1.0",
+    "uuid": "1b35cd5b-aa34-4cec-a169-a22a0ffd2e1b",
+    "appKeys": {},
+    "longName": "A Portuguesa",
+    "versionCode": 3,
+    "capabilities": [
+        ""
+    ],
+    "shortName": "A Portuguesa",
+    "companyName": "joaopluis",
+    "watchapp": {
+        "watchface": true
+    },
+    "resources": {
+        "media": [
+            {
+                "menuIcon": true,
+                "type": "png",
+                "name": "ICON_PT",
+                "file": "images/iconpt.png"
+            },
+            {
+                "type": "png",
+                "name": "WARNING_ICON",
+                "file": "images/warning.png"
+            },
+            {
+                "type": "png",
+                "name": "BLUETOOTH_ICON",
+                "file": "images/iconbt.png"
+            }
+        ]
+    }
+}
