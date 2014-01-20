@@ -182,6 +182,10 @@ void window_unload(Window *window){
 	text_layer_destroy(bat_layer);
 	text_layer_destroy(ampm_layer);
 	inverter_layer_destroy(inv_layer);
+	gbitmap_destroy(bt_bitmap);
+	bitmap_layer_destroy(bt_layer);
+	gbitmap_destroy(btc_bitmap);
+	bitmap_layer_destroy(btc_layer);
 }
 
 void init(){
