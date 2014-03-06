@@ -9,7 +9,7 @@ TextLayer *wday_layer;
 TextLayer *bat_layer;
 TextLayer *ampm_layer;
 char time_buffer[] = "00:00";
-char date_buffer[] = "DD de MMMMMMMMM";
+char date_buffer[] = "DD de MMMNNNNNN";
 char bat_buffer[10];
 InverterLayer *inv_layer;
 
@@ -121,7 +121,7 @@ void window_load(Window *window){
 	
 	layer_add_child(window_get_root_layer(window), (Layer*) ampm_layer);
 	
-	date_layer = text_layer_create(GRect(0, 108, 144, 26));
+	date_layer = text_layer_create(GRect(0, 108, 144, 28));
 	text_layer_set_background_color(date_layer, GColorClear);
 	text_layer_set_text_color(date_layer, GColorBlack);
 	text_layer_set_text_alignment(date_layer, GTextAlignmentCenter);
@@ -133,7 +133,7 @@ void window_load(Window *window){
 	text_layer_set_background_color(wday_layer, GColorClear);
 	text_layer_set_text_color(wday_layer, GColorBlack);
 	text_layer_set_text_alignment(wday_layer, GTextAlignmentCenter);
-	text_layer_set_font(wday_layer, fonts_get_system_font(FONT_KEY_GOTHIC_24));
+	text_layer_set_font(wday_layer,fonts_get_system_font(FONT_KEY_GOTHIC_24));
 	
 	layer_add_child(window_get_root_layer(window), (Layer*) wday_layer);
 	
